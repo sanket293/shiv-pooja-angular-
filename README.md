@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+## bootstrap install:
+run this coommand `npm i @ng-bootstrap/ng-bootstrap`
+run this coommand `npm i bootstrap`
+
+run this coommand `npm i @ng-bootstrap/ng-bootstrap --save --dev`
+run this coommand `npm i bootstrap --save --dev`
+
+## font awesome install:
+run this coommand `npm i @fortawesome/fontawesome-free`
+run this coommand `npm i @fortawesome/fontawesome-free --save --dev`
+
+## flash message install:
+run this coommand `npm i angular2-flash-messages`
+run this coommand `npm i angular2-flash-messages --save --dev`
+ 
+
