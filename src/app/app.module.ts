@@ -9,12 +9,19 @@ import { FooterComponent } from './components/shared/partials/footer/footer.comp
 import { HeaderComponent } from './components/shared/partials/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
-import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { AboutComponent } from './components/about/about.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS, MatFormFieldModule} from '@angular/material/form-field';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +31,7 @@ import {MatIconModule} from '@angular/material/icon';
     HeaderComponent,
     HomeComponent,
     PageNotFoundComponent,
-    AboutusComponent,
+    AboutComponent,
     ContactusComponent
   ],
   imports: [
@@ -32,12 +39,16 @@ import {MatIconModule} from '@angular/material/icon';
     AppRoutingModule,
     BrowserAnimationsModule,
 
+    FormsModule,
+    ReactiveFormsModule,
+
     MatToolbarModule,
     MatIconModule,
-
-
+    MatSidenavModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
   ],
-  providers: [],
+  providers: [ { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
