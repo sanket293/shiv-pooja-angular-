@@ -1,1 +1,10 @@
-<p>Har Har Mahadev</p>
+<div class="jumbotron">
+    <h1 class="display-4">ॐ नमः शिवाय</h1>
+    <p class="lead">ॐ नमः शिवाय ॐ नमः शिवाय ॐ नमः शिवाय ॐ नमः शिवाय</p>
+    <hr class="my-4">
+
+    <ul class="list-group" *ngFor="let item of listItems; index as i">
+        <li class="list-group-item" (click)="listItemClick(i)">{{item}}</li>
+    </ul>
+
+</div>

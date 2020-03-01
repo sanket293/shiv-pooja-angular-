@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  listItems=["ॐ नमः शिवाय 1","ॐ नमः शिवाय 2 ","ॐ नमः शिवाय 3"]
   constructor() { }
 
   ngOnInit() {
   }
-
+  listItemClick(index){
+    console.log( "."+index);
+    
+  }
 }
