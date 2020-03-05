@@ -1,6 +1,10 @@
 .jumbotron{
-    height: 100%;
+    height: auto;
 }
-h2{
+h5{
+    text-align: center; 
+}
+h6{
     text-align: center;
+    white-space: pre-line;
 }
