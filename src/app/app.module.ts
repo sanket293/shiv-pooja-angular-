@@ -15,6 +15,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { DisplayShivPoojaComponent } from './components/display-shiv-pooja/display-shiv-pooja.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatIconModule} from '@angular/material/icon';
     HomeComponent,
     PageNotFoundComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+    DisplayShivPoojaComponent
   ],
   imports: [
     BrowserModule,
