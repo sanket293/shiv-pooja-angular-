@@ -1,10 +1,16 @@
 .jumbotron{
     height: auto;
 }
-h5{
-    text-align: center; 
-}
-h6{
+
+h6,h5{
     text-align: center;
     white-space: pre-line;
+}
+
+i{
+    margin-left: 15px;
+font-size: 28px;
+}
+a{
+    color: #343a40!important;
 }

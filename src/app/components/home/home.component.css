@@ -1,6 +1,8 @@
 
 .jumbotron{
-    height: auto;}
+    height: auto;
+    margin-bottom: auto; 
+}
 li{
     margin-top: 10px;
     width: 100%;

@@ -44,4 +44,15 @@ run this coommand `npm i @fortawesome/fontawesome-free --save --dev`
 run this coommand `npm i angular2-flash-messages`
 run this coommand `npm i angular2-flash-messages --save --dev`
  
+//todo
+=> {change the default position of text in display component(it suppose to show top first; sometimes it shows footer)}
+=> { check for server and domain name }
+=>{ shiv pooja , shiv bhajans, shiv stories, shiv wallpapers, 12 jyotilings, temples of load shiva}
+
+
+
+
+
+
+
 
