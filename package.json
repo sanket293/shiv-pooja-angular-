@@ -26,6 +26,7 @@
     "@ng-bootstrap/ng-bootstrap": "^6.0.0",
     "angular2-flash-messages": "^3.0.1",
     "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
     "lite-server": "^2.5.4",
     "rxjs": "~6.4.0",
@@ -54,7 +55,7 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   },
-   "engines": {
+  "engines": {
     "node": "12.14.0",
     "npm": "6.13.7"
   }
