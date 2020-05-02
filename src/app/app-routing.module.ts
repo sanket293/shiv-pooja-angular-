@@ -8,15 +8,14 @@ import { DisplayShivPoojaComponent } from './components/display-shiv-pooja/displ
 
 
 const routes: Routes = [
+  {path: '', component: HomeComponent, data: {title: 'Home'}},
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
   {path: 'about-us', component: AboutusComponent, data: {title: 'About us'}},
   {path: 'contact-us', component: ContactusComponent, data: {title: 'Contact us'}},
   {path: 'display-shiv-pooja', component: DisplayShivPoojaComponent, data: {title: 'Shiv Pooja'}},
-
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  // {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
-  
-  
+    
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
