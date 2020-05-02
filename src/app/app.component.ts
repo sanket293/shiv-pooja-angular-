@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-var gtag;
+declare var gtag;
 
 @Component({
   selector: 'app-root',
@@ -20,5 +20,5 @@ export class AppComponent {
         });
       });
     }
-    
+
 }
