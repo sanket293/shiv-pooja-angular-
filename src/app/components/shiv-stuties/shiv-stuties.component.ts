@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { DisplayService } from 'src/app/services/display/display.service';
 import { DisplayTextModel } from 'src/app/model/display.model';
+import { DisplayService } from 'src/app/services/display/display.service';
+import { ShivStutieModel } from 'src/app/model/shivstutiemodel.model';
 import { AppConstants } from 'src/app/others/appconstants';
-import { ShivPoojaModel } from 'src/app/model/shivpooja.model';
 
 @Component({
-  selector: 'app-display-shiv-pooja',
-  templateUrl: './display-shiv-pooja.component.html',
-  styleUrls: ['./display-shiv-pooja.component.css']
+  selector: 'app-shiv-stuties',
+  templateUrl: './shiv-stuties.component.html',
+  styleUrls: ['./shiv-stuties.component.css']
 })
-export class DisplayShivPoojaComponent implements OnInit {
+export class ShivStutiesComponent implements OnInit {
+
   titleDisplay: string;
   displayText: string;
   displayTextObj: DisplayTextModel;
@@ -21,12 +22,11 @@ export class DisplayShivPoojaComponent implements OnInit {
 
     if (this.displayTextObj.pageComponent === AppConstants.NAV_HOME) {
       // display stuties and pooja texts
-      let shivPoojaObj: ShivPoojaModel = this.displayTextObj.selectedText;
-      this.displayText = shivPoojaObj.listvalue;
-      this.titleDisplay = shivPoojaObj.listkey;
+      let shivStutieObj: ShivStutieModel = this.displayTextObj.selectedText;
+      this.displayText = shivStutieObj.listvalue;
+      this.titleDisplay = shivStutieObj.listkey;
 
     }
 
   }
-
 }

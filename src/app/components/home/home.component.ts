@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ShivPoojaModel } from 'src/app/model/shivpooja.model';
-import { ShivpoojaService } from 'src/app/services/shivpooja/shivpooja.service';
+import { ShivStutieModel } from 'src/app/model/shivstutiemodel.model';
 import { DisplayService } from 'src/app/services/display/display.service';
 import { Router } from '@angular/router';
 import { AppConstants } from 'src/app/others/appconstants';
+import { ShivstutiesService } from 'src/app/services/shivstuties/shivstuties.service';
 
 @Component({
   selector: 'app-home',
@@ -11,34 +11,30 @@ import { AppConstants } from 'src/app/others/appconstants';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  shivPoojaObj: ShivPoojaModel[] = [];
+  shivStutieObj: ShivStutieModel[] = [];
 
-  constructor(private _shivpoojaService: ShivpoojaService,
+  constructor(
+    private _shivStutieService: ShivstutiesService,
     private _displayService: DisplayService,
     private router: Router
   ) { }
 
   ngOnInit() {
-    this.fillList();
+        this.fillList();
   }
 
   fillList() {
-
-    this._shivpoojaService.getShivPoojaList().subscribe((list) => {
-
+    this._shivStutieService.getShivStutiesList().subscribe((list) => {
       list.forEach(element => {
         console.log(element.listkey);
-        this.shivPoojaObj.push(element);
+        this.shivStutieObj.push(element);
       });
     });
   }
 
   async listItemClick(index: number) {
-
-    console.log("." + this.shivPoojaObj[index].listvalue);
-
-    this._displayService.setSelectedText(this.shivPoojaObj[index], AppConstants.NAV_HOME);
-    this.router.navigate(['display-shiv-pooja']);
+    this._displayService.setSelectedText(this.shivStutieObj[index], AppConstants.NAV_HOME);
+    this.router.navigate(['shiv-stuties']);
 
   }
 }

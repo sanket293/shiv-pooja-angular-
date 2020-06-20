@@ -4,7 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
-import { DisplayShivPoojaComponent } from './components/display-shiv-pooja/display-shiv-pooja.component';
+import { ShivStutiesComponent } from './components/shiv-stuties/shiv-stuties.component';
 
 
 const routes: Routes = [
@@ -12,8 +12,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
   {path: 'about-us', component: AboutusComponent, data: {title: 'About us'}},
   {path: 'contact-us', component: ContactusComponent, data: {title: 'Contact us'}},
-  {path: 'display-shiv-pooja', component: DisplayShivPoojaComponent, data: {title: 'Shiv Pooja'}},
-  // {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'shiv-stuties', component: ShivStutiesComponent, data: {title: 'Shiv Stuties'}},
   {path: '**', component: PageNotFoundComponent}
     
 ];
