@@ -1,0 +1,1 @@
+Generate different size of images for home page

@@ -12,7 +12,8 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { ShivStutiesComponent } from './components/shiv-stuties/shiv-stuties.component';
+import { StutiesListComponent } from './components/stuties/stuties-list/stuties-list.component';
+import { ShivStutiesComponent } from './components/stuties/shiv-stuties/shiv-stuties.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ShivStutiesComponent } from './components/shiv-stuties/shiv-stuties.com
     PageNotFoundComponent,
     AboutusComponent,
     ContactusComponent,
-    ShivStutiesComponent
+    ShivStutiesComponent,
+    StutiesListComponent
   ],
   imports: [
     BrowserModule,
