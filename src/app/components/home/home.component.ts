@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShivStutieModel } from 'src/app/model/shivstutiemodel.model';
-import { DisplayService } from 'src/app/services/display/display.service';
 import { Router } from '@angular/router';
-import { AppConstants } from 'src/app/others/appconstants';
-import { ShivstutiesService } from 'src/app/services/shivstuties/shivstuties.service';
 import { HomePageMenuService } from 'src/app/services/home-page-menu/home-page-menu.service';
 import { HomePageMenuList } from 'src/app/model/enums/home-page-menu-list';
 import { HomePageMenuListModel } from 'src/app/model/home-page-menu-list.model';
