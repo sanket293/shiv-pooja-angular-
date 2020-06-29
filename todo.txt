@@ -1,1 +1,18 @@
-Generate different size of images for home page
+Images:-
+Generate different size of images for home page slider
+Images for home page menus
+Damru icon in navigation and favicon
+
+
+UI:-
+home page 
+    see more cursor should show hand
+
+
+
+Logic:-
+    FIX: Stutie list url parameter passing, send it as modelobject from list and get decode from other side
+    Remove log
+
+Other:-
+Think about language code in stuties and other

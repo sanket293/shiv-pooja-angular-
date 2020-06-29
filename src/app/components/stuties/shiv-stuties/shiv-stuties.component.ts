@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { DisplayTextModel } from 'src/app/model/display.model';
-import { DisplayService } from 'src/app/services/display/display.service';
-import { ShivStutieModel } from 'src/app/model/shivstutiemodel.model';
+import { ActivatedRoute } from '@angular/router';
 import { AppConstants } from 'src/app/others/appconstants';
+import { ShivStutieModel } from 'src/app/model/shivstutiemodel.model';
+import { Stuties } from 'src/app/model/enums/stuties';
 
 @Component({
   selector: 'app-shiv-stuties',
@@ -11,22 +11,13 @@ import { AppConstants } from 'src/app/others/appconstants';
 })
 export class ShivStutiesComponent implements OnInit {
 
-  titleDisplay: string;
-  displayText: string;
-  displayTextObj: DisplayTextModel;
-  constructor(private _displayService: DisplayService) { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.displayTextObj = this._displayService.getSelectedText();
-    console.log(this.displayTextObj);
-
-    if (this.displayTextObj.pageComponent === AppConstants.NAV_HOME) {
-      // display stuties and pooja texts
-      let shivStutieObj: ShivStutieModel = this.displayTextObj.selectedText;
-      this.displayText = shivStutieObj.listvalue;
-      this.titleDisplay = shivStutieObj.listkey;
-
-    }
-
+  stutie: ShivStutieModel = null;
+  async ngOnInit() {
+    this.activatedRoute.queryParams.subscribe(params => {
+      var stutieParams = params["Stutie"];
+      this.stutie = JSON.parse(stutieParams);
+    });
   }
 }

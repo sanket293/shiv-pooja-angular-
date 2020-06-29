@@ -1,1 +1,18 @@
-<p>stuties-list works!</p>
+<div class="container">
+    <div class="jumbotron">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="home">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Stutie</li>
+            </ol>
+          </nav>
+          
+        <div class="list-group" *ngFor="let stutie of shivStutieList">
+            <span (click)="stutieListItemClick(stutie.stutieId)"
+                class="list-group-item list-group-item-action list-group-item-dark ">
+                {{stutie.key}}</span>
+            <hr>
+        </div>
+
+    </div>
+</div>

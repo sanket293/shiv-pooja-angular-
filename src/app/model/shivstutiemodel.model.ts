@@ -2,8 +2,8 @@ import { Stuties } from './enums/stuties';
 
 export interface ShivStutieModel {
 
-        listkey: string,
-        listvalue: string,
+        key: string,
+        value: string,
         stutieId: Stuties
 
 }

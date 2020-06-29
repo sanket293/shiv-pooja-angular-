@@ -1,19 +1,17 @@
-<br>
-<div class="container">
-    <div class="row">
-        <a routerLink="/home"> <i class="material-icons"> navigate_before </i></a>
-        Home
-    </div>
-</div>
-
 
 <div class="jumbotron">
-    <!-- <h5 class="display-4">{{ titleDisplay }}</h5>
-    <hr class="my-4"> -->
+ 
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="home">Home</a></li>
+          <li class="breadcrumb-item"><a href="stuties-list">All Stuties</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ stutie.key }}</li>
+        </ol>
+      </nav>
 
-    <h1>{{ titleDisplay }}</h1>
+    <h1>{{ stutie.key }}</h1>
     <hr class="my-4">
 
-    <h5>{{displayText}}</h5>
+    <h5>{{stutie.value }}</h5>
 
 </div>

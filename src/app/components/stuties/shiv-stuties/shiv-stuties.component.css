@@ -2,7 +2,7 @@
     height: auto;
 }
 
-h6,h5{
+h6,h5,h1{
     text-align: center;
     white-space: pre-line;
 }
@@ -14,3 +14,4 @@ font-size: 28px;
 a{
     color: #343a40!important;
 }
+

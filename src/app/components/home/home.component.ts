@@ -15,12 +15,11 @@ import { HomePageMenuListModel } from 'src/app/model/home-page-menu-list.model';
 })
 
 export class HomeComponent implements OnInit {
-  shivStutieObj: ShivStutieModel[] = [];
+  
   homeMenuList: HomePageMenuListModel[] = [];
 
   constructor(
-    private _homeMenuListService: HomePageMenuService,
-    private _displayService: DisplayService,
+    private _homeMenuListService: HomePageMenuService,    
     private router: Router
   ) { }
 
@@ -28,37 +27,31 @@ export class HomeComponent implements OnInit {
     // this.fillList();
     this.displayMenuList();
   }
-  displayMenuList() {
 
+  // this fn will display the menus(Dynamically) at home page
+  displayMenuList() {
     this._homeMenuListService.getHomeMenuList().subscribe((list) => {
       list.forEach(element => {
         this.homeMenuList.push(element);
       });
     });
+  }
 
-    // this._homeMenuListService.getShivStutiesList().subscribe((list) => {
-    //   list.forEach(element => {
-    //     console.log(element.listkey);
-    //     this.shivStutieObj.push(element);
-    //   });
-    // });
+
+
+  async homeMenuItemClick(item: HomePageMenuList) {
+    switch (item) {
+      case HomePageMenuList.Stuties:
+        // this._displayService.setSelectedText(this.shivStutieObj[index], AppConstants.NAV_HOME);
+        this.router.navigate(['stuties-list']);
+        break;
+      default:
+        alert("This feature is coming soon");
+    }
 
   }
 
-  // fillList() {
-  //   this._shivStutieService.getShivStutiesList().subscribe((list) => {
-  //     list.forEach(element => {
-  //       console.log(element.listkey);
-  //       this.shivStutieObj.push(element);
-  //     });
-  //   });
-  // }
 
-  async listItemClick(index: number) {
-    this._displayService.setSelectedText(this.shivStutieObj[index], AppConstants.NAV_HOME);
-    this.router.navigate(['shiv-stuties']);
-
-  }
 }
 
 
