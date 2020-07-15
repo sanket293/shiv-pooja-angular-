@@ -43,3 +43,7 @@ footer {
 footer p {
     margin-bottom: .25rem;
 }
+
+.card-link{
+    cursor:pointer;
+}

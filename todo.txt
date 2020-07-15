@@ -9,10 +9,19 @@ home page
     see more cursor should show hand
 
 
-
 Logic:-
     FIX: Stutie list url parameter passing, send it as modelobject from list and get decode from other side
     Remove log
+    FIX: 500 error when go to home page
 
 Other:-
 Think about language code in stuties and other
+
+
+1) Add status and images-> from Mahakal app at Quotestatus and images menu
+2) Search about bhajans and kathas to write
+3) decide the Home menu, which things need to display and what to hide
+4) solve routing bug(internal server 500)
+5) Find the icons, banner image etc
+6) contact someone to promote the stutie
+7) makesure the ads are working
